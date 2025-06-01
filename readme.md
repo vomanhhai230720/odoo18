@@ -13,6 +13,7 @@ docker compose up -d (Chạy ở chế độ nền không bị dừng khi docker
 
 # Tài liệu thêm:
 # hướng dẫn cài đặt: https://opensourcehustle.com/blog/odoo-erp-1/odoo-windows-docker-compose-7
+# hướng dẫn học : https://www.youtube.com/watch?v=kxbPgOLkNxw&list=PLqRRLx0cl0hq0T4SV-BHhCicWOpzyWcHd
 
 # các lệnh command thêm: 
 
