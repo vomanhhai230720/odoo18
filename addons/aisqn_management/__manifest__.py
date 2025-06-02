@@ -23,8 +23,9 @@ Bao gồm các chức năng như người dùng, quy trình nội bộ, báo cá
     'data': [
         #'security/ir.model.access.csv',  # phân quyền
         'views/views.xml',               # view cơ bản
-        #'views/menu.xml',                # menu app
-        'views/templates.xml',         # nếu có website
+        'views/menu.xml',                # menu app
+        'views/templates.xml',        
+        # 'views/user_view.xml',
     ],
 
     # Dữ liệu demo (tùy chọn)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
+
+  <!-- Menu con hiển thị danh sách người dùng -->
+  <menuitem id="menu_uni_user" name="User List"
+            parent="menu_uni_aisqn_management_root"
+            action="action_uni_user"
+            sequence="20"/>
+    <menuitem id="menu_uni_user_omada" name="User KYC"
+            parent="menu_uni_aisqn_management_root"
+            action="action_uni_user"
+            sequence="20"/>
+</odoo>
