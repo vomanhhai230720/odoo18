@@ -3,7 +3,7 @@
   <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
 
   <!-- Menu con hiển thị danh sách người dùng -->
-  <menuitem id="menu_uni_user" name="User List"
+  <menuitem id="menu_uni_user" name="User Management"
             parent="menu_uni_aisqn_management_root"
             action="action_uni_user"
             sequence="20"/>
@@ -11,4 +11,9 @@
             parent="menu_uni_aisqn_management_root"
             action="action_uni_user"
             sequence="20"/>
+        <menuitem id="menu_uni_user_affiliate" name="User"
+            parent="menu_uni_user"
+            action="action_uni_user"
+            sequence="30"/>
+
 </odoo>

@@ -2,34 +2,60 @@
   <data>
     <!-- explicit list view definition -->
 
-<record model="ir.ui.view" id="aisqn_management.list">
-  <field name="name">User</field>
-  <field name="model">uni.user</field>
-  <field name="arch" type="xml">
-    <list>
-      <field name="username"/>
-      <field name="email"/>
-      <field name="password" widget="password"/>
-      <field name="full_name"/>
-      <field name="phone"/>
-      <field name="invite_aff_code"/>
-      <field name="aff_code"/>
-      <field name="status"/>
-      <field name="token"/>
-      <field name="updated_at"/>
-      <field name="updated_last_datetime"/>
-      <field name="update_last_by_id"/>
-      <field name="created_at" readonly="1"/>
-    </list>
-  </field>
-</record>
-<record id="action_uni_user" model="ir.actions.act_window">
-  <field name="name">Users</field>
-  <field name="res_model">uni.user</field>
-  <field name="view_mode">list</field>
-</record>
+    <record model="ir.ui.view" id="aisqn_management.form">
+      <field name="name">User</field>
+      <field name="model">uni.user</field>
+      <field name="arch" type="xml">
+        <form string="User">
+          <sheet>
+            <group>
+              <field name="username" string="Username"/>
+              <field name="email"/>
+              <field name="password" widget="password"/>
+              <field name="full_name"/>
+              <field name="phone"/>
+              <field name="invite_aff_code"/>
+              <field name="aff_code"/>
+              <field name="status"/>
+              <field name="token"/>
+              <field name="updated_at"/>
+              <field name="updated_last_datetime"/>
+              <field name="update_last_by_id"/>
+              <field name="created_at" readonly="1"/>
+            </group>
+
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="aisqn_management.list">
+      <field name="name">User</field>
+      <field name="model">uni.user</field>
+      <field name="arch" type="xml">
+        <list string="User">
+          <field name="username" string="Username"/>
+          <field name="email"/>
+          <field name="password" widget="password"/>
+          <field name="full_name"/>
+          <field name="phone"/>
+          <field name="invite_aff_code"/>
+          <field name="aff_code"/>
+          <field name="status"/>
+          <field name="token"/>
+          <field name="updated_at"/>
+          <field name="updated_last_datetime"/>
+          <field name="update_last_by_id"/>
+          <field name="created_at" readonly="1"/>
+        </list>
+      </field>
+    </record>
+    <record id="action_uni_user" model="ir.actions.act_window">
+      <field name="name">Users</field>
+      <field name="res_model">uni.user</field>
+      <field name="view_mode">list,form</field>
+    </record>
     <!-- actions opening views on models -->
-<!--
+    <!--
     <record model="ir.actions.act_window" id="aisqn_management.action_window">
       <field name="name">aisqn_management window</field>
       <field name="res_model">aisqn_management.aisqn_management</field>
@@ -38,7 +64,7 @@
 -->
 
     <!-- server action to the one above -->
-<!--
+    <!--
     <record model="ir.actions.server" id="aisqn_management.action_server">
       <field name="name">aisqn_management server</field>
       <field name="model_id" ref="model_aisqn_management_aisqn_management"/>
@@ -54,20 +80,10 @@
 -->
 
     <!-- Top menu item -->
-
-    <menuitem name="aisqn_management" id="aisqn_management.menu_root"/>
-    <menuitem id="menu_uni_root" name="University"/>
-    <!-- menu categories -->
-
-    <menuitem name="Menu 1" id="aisqn_management.menu_1" parent="aisqn_management.menu_root"/>
-    <menuitem name="Menu 2" id="aisqn_management.menu_2" parent="aisqn_management.menu_root"/>
-
     <!-- actions -->
 
-    <!-- <menuitem name="List" id="aisqn_management.menu_1_list" parent="aisqn_management.menu_1"
-              action="aisqn_management.action_window"/>
-    <menuitem name="Server to list" id="aisqn_management" parent="aisqn_management.menu_2"
-              action="aisqn_management.action_server"/> -->
+    <!-- <menuitem name="List" id="aisqn_management.menu_1_list" parent="aisqn_management.menu_1" action="aisqn_management.action_window"/>
+    <menuitem name="Server to list" id="aisqn_management" parent="aisqn_management.menu_2" action="aisqn_management.action_server"/> -->
 
 
   </data>
