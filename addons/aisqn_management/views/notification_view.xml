@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- List View -->
+        <record id="view_notification_tree" model="ir.ui.view">
+            <field name="name">uni.notification.tree</field>
+            <field name="model">uni.notification</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="customer_id"/>
+                    <field name="type"/>
+                    <field name="title"/>
+                    <field name="message"/>
+                    <field name="action"/>
+                    <field name="unread"/>
+                    <field name="created_at"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_notification_form" model="ir.ui.view">
+            <field name="name">uni.notification.form</field>
+            <field name="model">uni.notification</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="customer_id"/>
+                                <field name="type"/>
+                                <field name="title"/>
+                                <field name="action"/>
+                            </group>
+                            <group>
+                                <field name="unread"/>
+                                <field name="created_at"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Message">
+                                <field name="message"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="view_notification_search" model="ir.ui.view">
+            <field name="name">uni.notification.search</field>
+            <field name="model">uni.notification</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="customer_id"/>
+                    <field name="type"/>
+                    <field name="title"/>
+                    <field name="message"/>
+                    <filter string="Unread" name="unread" domain="[('unread', '=', True)]"/>
+                    <filter string="Read" name="read" domain="[('unread', '=', False)]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Customer" name="group_by_customer" context="{'group_by': 'customer_id'}"/>
+                        <filter string="Type" name="group_by_type" context="{'group_by': 'type'}"/>
+                        <filter string="Action" name="group_by_action" context="{'group_by': 'action'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_notification" model="ir.actions.act_window">
+            <field name="name">Notifications</field>
+            <field name="res_model">uni.notification</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_notification_search"/>
+        </record>
+
+       
+    </data>
+</odoo>

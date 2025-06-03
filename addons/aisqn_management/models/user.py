@@ -25,6 +25,7 @@ class User(models.Model):
         ('inactive', 'Inactive'),
         ('suspended', 'Suspended'),
     ], string='Status', default='active', help='User account status')
+    role = fields.Integer(string='Role', default=0, required=True, help='User role in the system (0: User, 1: Admin, 2: Manager)')
     update_last_by_id = fields.Many2one('uni.user', string='Updated Last By', help='User who last updated this record')
 
     # Constraints (optional, to ensure uniqueness of username and email)
