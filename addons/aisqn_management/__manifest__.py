@@ -22,7 +22,7 @@ Bao gồm các chức năng như người dùng, quy trình nội bộ, báo cá
     # Luôn được nạp
     'data': [
         'security/ir.model.access.csv',  # phân quyền
-        'views/user_view.xml',               # view cơ bản       # menu app
+        'views/user_view.xml',             # view cơ bản       # menu app
         'views/templates.xml',
         'views/account_balance.xml',
         'views/customer_document_views.xml',
