@@ -2,97 +2,101 @@
 <odoo>
     <!-- Root Menu -->
     <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
-    
-    <!-- User Management Section -->
+        <!-- User Management Section -->
         <menuitem id="menu_uni_user" 
-                name="User Management"
+                name="User Managements"
                 parent="menu_uni_aisqn_management_root"
                 action="action_uni_user"
-                sequence="20"/>
-                
-        <menuitem id="menu_uni_user_omada" 
-                name="User KYC"
-                parent="menu_uni_user"
-                action="action_uni_user"
-                sequence="30"/>
-                
-        <menuitem id="menu_uni_user_affiliate" 
-                name="User"
-                parent="menu_uni_user"
-                action="action_uni_user"
-                sequence="40"/>
+                sequence="10"/>    
 
-        <menuitem id="menu_customer_document"
-                name="Customer Documents"
-                parent="menu_uni_user"
-                action="action_customer_document"
-                sequence="70"/>
+                <menuitem id="menu_notification"
+                        name="Notifications"
+                        parent="menu_uni_user"
+                        action="action_notification"
+                        sequence="10"/>
 
-        <menuitem id="menu_trading_account"
-                  name="Trading Account"
-                  parent="menu_uni_aisqn_management_root"
-                  action="action_uni_trading_account"
-                  sequence="70"/>
+                <menuitem id="menu_uni_user_affiliate" 
+                        name="User Infomations"
+                        parent="menu_uni_user"
+                        action="action_uni_user"
+                        sequence="20"/>
 
-        <menuitem id="menu_broker"
-                  name="Broker"
-                  parent="menu_trading_account"
-                  action="action_broker"
-                  sequence="80"/>         
-              
-        <!-- Account Balance Section -->
-        <menuitem id="menu_uni_account_balance" 
-                name="Account Balance" 
-                parent="menu_uni_aisqn_management_root"
-                action="action_account_balance"
-                sequence="50"/>    
+                <menuitem id="customer_menu" 
+                        name="Customers" 
+                        parent="menu_uni_user" 
+                        action="action_customer" 
+                        sequence="30"/>
 
-        <!-- Deposit History Section -->
-        <menuitem id="menu_history_deposit_bank" 
-                name="Deposit History Bank" 
-                parent="menu_uni_aisqn_management_root"
-                action="action_history_deposit_bank"
-                sequence="60"/>
+                <menuitem id="menu_customer_document"
+                        name="Customer Documents"
+                        parent="menu_uni_user"
+                        action="action_customer_document"
+                        sequence="40"/>
 
-        <!-- Trading Account Section -->
-        <menuitem id="menu_trading"
-                name="Trading"
-                parent="menu_trading_account"
-                action="action_uni_trading_account"
-                sequence="70"/>
-
-        <!-- Trading Strategy Section -->
-        <menuitem id="menu_trading_strategy"
-                name="Trading Strategy"
-                parent="menu_trading_account"
-                action="action_uni_trading_strategy"
-                sequence="80"/>
-
-        <menuitem id="menu_notification"
-                name="Notifications"
-                parent="menu_uni_user"
-                action="action_notification"
-                sequence="10"/>
-        <menuitem id="customer_menu" name="Customers" parent="menu_uni_user" action="action_customer" sequence="1"/>
-         <menuitem id="menu_uni_wallet" name="Wallet"
+         <!-- Wallets  -->
+        <menuitem id="menu_uni_wallet" name="Wallets"
             parent="menu_uni_aisqn_management_root"
             action="action_wallet"
             sequence="20"/>
 
-        <menuitem id="menu_wallet"
-                name="Wallets"
-                parent="menu_uni_wallet"
-                action="action_wallet"
-                sequence="10"/>
-    
-        <menuitem id="menu_wallet_transaction"
-                name="Wallet Transactions" 
-                parent="menu_uni_wallet"
-                action="action_wallet_transaction"
-                sequence="20"/>
-        <menuitem id="menu_payment_transaction_root" name="Payments" parent="menu_uni_aisqn_management_root" sequence="30"/>
-            
-                <menuitem id="menu_payment_transaction" name="Payment Transaction" parent="menu_payment_transaction_root" action="action_payment_transaction" sequence="1"/>
-                <menuitem id="menu_payment_transaction_crypto" name="Payment Transaction Crypto" parent="menu_payment_transaction_root" action="action_payment_transaction_crypto" sequence="2"/>
-                <menuitem id="menu_payment_method" name="Payment Method" parent="menu_payment_transaction_root" action="action_payment_method" sequence="3"/>
+                <menuitem id="menu_account_balance"
+                        name="Wallets"
+                        parent="menu_uni_wallet"
+                        action="action_wallet"
+                        sequence="10"/>    
+
+                <menuitem id="menu_wallet_transaction"
+                        name="Wallet Transactions" 
+                        parent="menu_uni_wallet"
+                        action="action_wallet_transaction"
+                        sequence="20"/>
+
+        <!-- Payment -->
+        <menuitem id="menu_payment_transaction_root" 
+                name="Payments" 
+                parent="menu_uni_aisqn_management_root" 
+                sequence="30"/>    
+
+                <menuitem id="menu_payment_transaction" 
+                        name="Payment Transaction" 
+                        parent="menu_payment_transaction_root" 
+                        action="action_payment_transaction" 
+                        sequence="1"/>
+
+                <menuitem id="menu_payment_transaction_crypto" 
+                        name="Payment Transaction Crypto" 
+                        parent="menu_payment_transaction_root" 
+                        action="action_payment_transaction_crypto" 
+                        sequence="2"/>
+
+                <menuitem id="menu_payment_method" 
+                        name="Payment Method" 
+                        parent="menu_payment_transaction_root" 
+                        action="action_payment_method" 
+                        sequence="3"/>
+
+        <!-- Trading Account -->
+        <menuitem id="menu_trading_account"
+                  name="Trading Accounts"
+                  parent="menu_uni_aisqn_management_root"
+                  action="action_uni_trading_account"
+                  sequence="40"/>
+                <menuitem id="menu_broker"
+                        name="Broker"
+                        parent="menu_trading_account"
+                        action="action_broker"
+                        sequence="10"/>       
+
+                <menuitem id="menu_trading"
+                        name="Trading"
+                        parent="menu_trading_account"
+                        action="action_uni_trading_account"
+                        sequence="20"/>
+        
+                <menuitem id="menu_trading_strategy"
+                        name="Trading Strategy"
+                        parent="menu_trading_account"
+                        action="action_uni_trading_strategy"
+                        sequence="30"/>
+
 </odoo>
