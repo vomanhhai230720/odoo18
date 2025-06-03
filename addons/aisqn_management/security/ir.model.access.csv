@@ -2,3 +2,6 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_aisqn_management_aisqn_management,aisqn_management.aisqn_management,model_aisqn_management_aisqn_management,base.group_user,1,1,1,1
 access_uni_history_deposit_bank,access.uni.history.deposit.bank,model_uni_history_deposit_bank,base.group_user,1,1,1,1
 access_uni_user,access_uni_user,model_uni_user,,1,1,1,1
+access_uni_payment_transaction,access.uni.payment.transaction,model_uni_payment_transaction,base.group_user,1,1,1,1
+access_uni_payment_transaction_crypto,access.uni.payment.transaction.crypto,model_uni_payment_transaction_crypto,base.group_user,1,1,1,1
+access_uni_payment_method,access.uni.payment.method,model_uni_payment_method,base.group_user,1,1,1,1

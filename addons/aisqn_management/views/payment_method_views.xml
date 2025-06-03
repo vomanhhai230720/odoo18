@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View for Payment Method -->
+    <record id="view_payment_method_list" model="ir.ui.view">
+        <field name="name">payment.method.list</field>
+        <field name="model">uni.payment.method</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="affiliate_id"/>
+                <field name="referred_id"/>
+                <field name="amount"/>
+                <field name="status"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View for Payment Method -->
+    <record id="view_payment_method_form" model="ir.ui.view">
+        <field name="name">payment.method.form</field>
+        <field name="model">uni.payment.method</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="affiliate_id"/>
+                        <field name="referred_id"/>
+                        <field name="amount"/>
+                        <field name="status"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for Payment Method -->
+    <record id="action_payment_method" model="ir.actions.act_window">
+        <field name="name">Payment Method</field>
+        <field name="res_model">uni.payment.method</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu item for Payment Method (con của Payment Transaction) -->
+    <menuitem id="menu_payment_method" name="Payment Method" parent="menu_payment_transaction_root" action="action_payment_method" sequence="3"/>
+</odoo>
