@@ -8,14 +8,9 @@
             <list>
                 <field name="user_id"/>
                 <field name="payment_id"/>
-                <field name="currency_id"/>
-                <field name="amount"/>
-                <field name="fee"/>
-                <field name="amount_with_fee"/>
-                <field name="status"/>
                 <field name="type"/>
-                <field name="requested_at"/>
-                <field name="confirmed_at"/>
+                <field name="amount"/>
+                <field name="status"/>
                 <field name="is_verified_by_admin"/>
             </list>
         </field>
@@ -31,14 +26,9 @@
                     <group>
                         <field name="user_id"/>
                         <field name="payment_id"/>
-                        <field name="currency_id"/>
-                        <field name="amount"/>
-                        <field name="fee"/>
-                        <field name="amount_with_fee"/>
-                        <field name="status"/>
                         <field name="type"/>
-                        <field name="requested_at"/>
-                        <field name="confirmed_at"/>
+                        <field name="amount"/>
+                        <field name="status"/>
                         <field name="desc"/>
                         <field name="is_verified_by_admin"/>
                     </group>
@@ -54,5 +44,5 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    
+
 </odoo>
