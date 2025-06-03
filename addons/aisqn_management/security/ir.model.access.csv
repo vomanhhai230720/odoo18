@@ -17,5 +17,6 @@ access_uni_customer,access_uni_customer,model_uni_customer,,1,1,1,1
 access_uni_notification,access_uni_notification,model_uni_notification,,1,1,1,1
 access_uni_wallet,access_uni_wallet,model_uni_wallet,,1,1,1,1
 access_uni_wallet_transaction,access_uni_wallet_transaction,model_uni_wallet_transaction,,1,1,1,1
+access_uni_account_balance,access_uni_account_balance,model_uni_account_balance,,1,1,1,1
 
 
