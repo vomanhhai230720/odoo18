@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+<<<<<<< HEAD
     <!-- Root Menu -->
     <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
     
@@ -67,4 +68,60 @@
               parent="menu_trading_account"
               action="action_uni_trading_strategy"
               sequence="80"/>
+=======
+  <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
+  <menuitem id="menu_history_deposit_bank_root" name="Deposit History Bank " sequence="20"/>
+  <!-- Menu con hiển thị danh sách người dùng -->
+  <menuitem id="menu_uni_user" name="User Management"
+            parent="menu_uni_aisqn_management_root"
+            action="action_uni_user"
+            sequence="20"/>
+    <menuitem id="menu_uni_user_omada" name="User KYC"
+            parent="menu_uni_aisqn_management_root"
+            action="action_uni_user"
+            sequence="20"/>
+
+        <menuitem id="menu_uni_user_affiliate" name="User"
+            parent="menu_uni_user"
+            action="action_uni_user"
+            sequence="30"/>
+             <!-- Menu Item -->
+        <menuitem id="menu_notification"
+                  name="Notifications"
+                  parent="menu_uni_user"
+                  action="action_notification"
+                  sequence="10"/>
+        <menuitem id="customer_menu" name="Customers" parent="menu_uni_user" action="action_customer" sequence="1"/>
+         <!-- <menuitem id="menu_uni_account_balance" 
+              name="Account Balance" 
+              parent="menu_uni_aisqn_management_root"
+              action="action_account_balance"
+              sequence="30"/>     -->
+
+    <!-- <menuitem id="menu_history_deposit_bank" name="Deposit History Bank"
+            parent="menu_history_deposit_bank_root"
+            action="action_history_deposit_bank"
+            sequence="10"/>
+
+    <menuitem id="menu_history_deposit_bank" name="Deposits" 
+    parent="menu_history_deposit_bank_root" 
+    action="action_history_deposit_bank" 
+    sequence="1"/> -->
+     <menuitem id="menu_uni_wallet" name="Wallet"
+            parent="menu_uni_aisqn_management_root"
+            action="action_wallet"
+            sequence="20"/>
+
+        <menuitem id="menu_wallet"
+                name="Wallets"
+                parent="menu_uni_wallet"
+                action="action_wallet"
+                sequence="10"/>
+    
+        <menuitem id="menu_wallet_transaction"
+                name="Wallet Transactions" 
+                parent="menu_uni_wallet"
+                action="action_wallet_transaction"
+                sequence="20"/>
+>>>>>>> 2e37376ea04b307007094972a36f3b7b155bfd93
 </odoo>
