@@ -39,6 +39,5 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <!-- Menu item for Payment Method (con của Payment Transaction) -->
-    <menuitem id="menu_payment_method" name="Payment Method" parent="menu_payment_transaction_root" action="action_payment_method" sequence="3"/>
+    
 </odoo>

@@ -17,6 +17,7 @@
               <field name="invite_aff_code"/>
               <field name="aff_code"/>
               <field name="status"/>
+              <field name="role"/>
               <field name="token"/>
               <field name="updated_at"/>
               <field name="updated_last_datetime"/>
@@ -41,6 +42,7 @@
           <field name="invite_aff_code"/>
           <field name="aff_code"/>
           <field name="status"/>
+          <field name="role"/>
           <field name="token"/>
           <field name="updated_at"/>
           <field name="updated_last_datetime"/>

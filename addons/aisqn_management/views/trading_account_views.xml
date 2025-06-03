@@ -1,0 +1,51 @@
+<odoo>
+    <!-- List View -->
+    <record id="view_uni_trading_account_list" model="ir.ui.view">
+        <field name="name">uni.trading.account.list</field>
+        <field name="model">uni.trading.account</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="user_id"/>
+                <field name="username"/>
+                <field name="balance"/>
+                <field name="balance_pending"/>
+                <field name="status"/>
+                <field name="broker_id"/>
+                <field name="server"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_uni_trading_account_form" model="ir.ui.view">
+        <field name="name">uni.trading.account.form</field>
+        <field name="model">uni.trading.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="username"/>
+                        <field name="balance"/>
+                        <field name="balance_pending"/>
+                        <field name="investment_plan"/>
+                        <field name="broker_id"/>
+                        <field name="server"/>
+                        <field name="status"/>
+                        <field name="created_at"/>
+                        <field name="updated_at"/>
+                        <field name="update_last_by_id"/>
+                        <field name="updated_last_datetime"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_uni_trading_account" model="ir.actions.act_window">
+        <field name="name">Trading Accounts</field>
+        <field name="res_model">uni.trading.account</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
