@@ -21,10 +21,12 @@ Bao gồm các chức năng như người dùng, quy trình nội bộ, báo cá
 
     # Luôn được nạp
     'data': [
-        #'security/ir.model.access.csv',  # phân quyền
+        'security/ir.model.access.csv',  # phân quyền
         'views/views.xml',               # view cơ bản
         'views/menu.xml',                # menu app
-        'views/templates.xml',        
+        'views/templates.xml',
+        'views/account_balance.xml',
+        'views/history_deposit_bank_views.xml',        
         # 'views/user_view.xml',
     ],
 

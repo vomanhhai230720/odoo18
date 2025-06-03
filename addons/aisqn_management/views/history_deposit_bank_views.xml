@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View (danh sách) thay cho Tree View -->
+    <record id="view_history_deposit_bank_list" model="ir.ui.view">
+        <field name="name">history.deposit.bank.list</field>
+        <field name="model">uni.history.deposit.bank</field>
+        <field name="arch" type="xml">
+
+            <list>
+                <field name="user_id"/>
+                <field name="currency_id"/>
+                <field name="payment_id"/>
+                <field name="amount"/>
+                <field name="fee"/>
+                <field name="amount_with_fee"/>
+                <field name="status"/>
+                <field name="requested_at"/>
+                <field name="confirmed_at"/>
+                <field name="is_verified_by_admin"/>
+            </list>
+
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_history_deposit_bank_form" model="ir.ui.view">
+        <field name="name">history.deposit.bank.form</field>
+        <field name="model">uni.history.deposit.bank</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="currency_id"/>
+                        <field name="payment_id"/>
+                        <field name="amount"/>
+                        <field name="fee"/>
+                        <field name="amount_with_fee"/>
+                        <field name="status"/>
+                    </group>
+                    <group>
+                        <field name="type"/>
+                        <field name="requested_at"/>
+                        <field name="confirmed_at"/>
+                        <field name="description"/>
+                        <field name="is_verified_by_admin"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action: đổi view_mode sang list,form -->
+    <record id="action_history_deposit_bank" model="ir.actions.act_window">
+        <field name="name">History Deposit Bank</field>
+        <field name="res_model">uni.history.deposit.bank</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+   
+    
+</odoo>
