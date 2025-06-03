@@ -40,16 +40,22 @@
             sequence="20"/>
 
                 <menuitem id="menu_account_balance"
+                        name="Account Balances"
+                        parent="menu_uni_wallet"
+                        action="action_account_balance"
+                        sequence="22"/>    
+
+                <menuitem id="menu_wallet"
                         name="Wallets"
                         parent="menu_uni_wallet"
                         action="action_wallet"
-                        sequence="10"/>    
+                        sequence="23"/>    
 
                 <menuitem id="menu_wallet_transaction"
                         name="Wallet Transactions" 
                         parent="menu_uni_wallet"
                         action="action_wallet_transaction"
-                        sequence="20"/>
+                        sequence="24"/>
 
         <!-- Payment -->
         <menuitem id="menu_payment_transaction_root" 
