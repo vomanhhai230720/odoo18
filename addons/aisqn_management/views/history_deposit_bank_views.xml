@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- List View (danh sách) thay cho Tree View -->
     <record id="view_history_deposit_bank_list" model="ir.ui.view">
         <field name="name">history.deposit.bank.list</field>
         <field name="model">uni.history.deposit.bank</field>
         <field name="arch" type="xml">
-
             <list>
                 <field name="user_id"/>
                 <field name="currency_id"/>
@@ -50,9 +48,9 @@
         </field>
     </record>
 
-    <!-- Action: đổi view_mode sang list,form -->
+    <!-- Action -->
     <record id="action_history_deposit_bank" model="ir.actions.act_window">
-        <field name="name">History Deposit Bank</field>
+        <field name="name">Deposit History</field>
         <field name="res_model">uni.history.deposit.bank</field>
         <field name="view_mode">list,form</field>
     </record>

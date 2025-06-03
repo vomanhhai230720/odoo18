@@ -22,15 +22,15 @@ Bao gồm các chức năng như người dùng, quy trình nội bộ, báo cá
     # Luôn được nạp
     'data': [
         'security/ir.model.access.csv',  # phân quyền
-        'views/user_view.xml',               # view cơ bản
-        'views/customer_view.xml',           # view customer
-        'views/notification_view.xml',       # view notification
-        'views/wallet_view.xml',              # view wallet
-        'views/wallet_transaction_view.xml',  # view wallet transaction
-        'views/menu.xml',                # menu app
+        'views/views.xml',               # view cơ bản       # menu app
         'views/templates.xml',
         'views/account_balance.xml',
-        'views/history_deposit_bank_views.xml',        
+        'views/customer_document_views.xml',
+        'views/history_deposit_bank_views.xml', 
+        'views/broker_views.xml',
+        'views/trading_account_views.xml',
+        'views/trading_strategy_views.xml',
+         'views/menu.xml',        
         # 'views/user_view.xml',
     ],
 

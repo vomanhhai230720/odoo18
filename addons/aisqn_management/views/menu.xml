@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+<<<<<<< HEAD
+    <!-- Root Menu -->
+    <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
+    
+    <!-- User Management Section -->
+        <menuitem id="menu_uni_user" 
+                name="User Management"
+                parent="menu_uni_aisqn_management_root"
+                action="action_uni_user"
+                sequence="20"/>
+                
+        <menuitem id="menu_uni_user_omada" 
+                name="User KYC"
+                parent="menu_uni_aisqn_management_root"
+                action="action_uni_user"
+                sequence="30"/>
+                
+        <menuitem id="menu_uni_user_affiliate" 
+                name="User"
+                parent="menu_uni_user"
+                action="action_uni_user"
+                sequence="40"/>
+
+        <menuitem id="menu_customer_document"
+                name="Customer Documents"
+                parent="menu_uni_user"
+                action="action_customer_document"
+                sequence="70"/>
+
+        <menuitem id="menu_trading_account"
+                  name="Trading Account"
+                  parent="menu_uni_aisqn_management_root"
+                  action="action_uni_trading_account"
+                  sequence="70"/>
+
+        <menuitem id="menu_broker"
+                  name="Broker"
+                  parent="menu_trading_account"
+                  action="action_broker"
+                  sequence="80"/>         
+              
+    <!-- Account Balance Section -->
+    <menuitem id="menu_uni_account_balance" 
+              name="Account Balance" 
+              parent="menu_uni_aisqn_management_root"
+              action="action_account_balance"
+              sequence="50"/>    
+
+    <!-- Deposit History Section -->
+    <menuitem id="menu_history_deposit_bank" 
+              name="Deposit History Bank" 
+              parent="menu_uni_aisqn_management_root"
+              action="action_history_deposit_bank"
+              sequence="60"/>
+
+    <!-- Trading Account Section -->
+    <menuitem id="menu_trading"
+              name="Trading"
+              parent="menu_trading_account"
+              action="action_uni_trading_account"
+              sequence="70"/>
+
+    <!-- Trading Strategy Section -->
+    <menuitem id="menu_trading_strategy"
+              name="Trading Strategy"
+              parent="menu_trading_account"
+              action="action_uni_trading_strategy"
+              sequence="80"/>
+=======
   <menuitem id="menu_uni_aisqn_management_root" name="AISQN Management" sequence="10"/>
   <menuitem id="menu_history_deposit_bank_root" name="Deposit History Bank " sequence="20"/>
   <!-- Menu con hiển thị danh sách người dùng -->
@@ -54,4 +123,5 @@
                 parent="menu_uni_wallet"
                 action="action_wallet_transaction"
                 sequence="20"/>
+>>>>>>> 2e37376ea04b307007094972a36f3b7b155bfd93
 </odoo>
