@@ -1,4 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_aisqn_management_aisqn_management,aisqn_management.aisqn_management,model_aisqn_management_aisqn_management,base.group_user,1,1,1,1
 access_uni_history_deposit_bank,access.uni.history.deposit.bank,model_uni_history_deposit_bank,base.group_user,1,1,1,1
-access_uni_user,access_uni_user,model_uni_user,,1,1,1,1
+access_uni_user,access.uni_user,model_uni_user,base.group_user,1,1,1,1
+access_uni_customer_document,access.uni.customer.document,model_uni_customer_document,base.group_user,1,1,1,1
+access_uni_broker,access.uni.broker,model_uni_broker,base.group_user,1,1,1,1
+access_uni_trading_account,access.uni.trading.account,model_uni_trading_account,base.group_user,1,1,1,1
+access_uni_trading_strategy,access.uni.trading.strategy,model_uni_trading_strategy,base.group_user,1,1,1,1
