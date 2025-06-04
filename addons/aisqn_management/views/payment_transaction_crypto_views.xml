@@ -3,7 +3,7 @@
     <!-- List View for Payment Transaction Crypto -->
     <record id="view_payment_transaction_crypto_list" model="ir.ui.view">
         <field name="name">payment.transaction.crypto.list</field>
-        <field name="model">uni.invest.payment.transaction.crypto</field>
+        <field name="model">uni.payment.transaction.crypto</field>
         <field name="arch" type="xml">
             <list>
                 <field name="user_id"/>
@@ -27,7 +27,7 @@
     <!-- Form View for Payment Transaction Crypto -->
     <record id="view_payment_transaction_crypto_form" model="ir.ui.view">
         <field name="name">payment.transaction.crypto.form</field>
-        <field name="model">uni.invest.payment.transaction.crypto</field>
+        <field name="model">uni.payment.transaction.crypto</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -56,7 +56,7 @@
     <!-- Action for Payment Transaction Crypto -->
     <record id="action_payment_transaction_crypto" model="ir.actions.act_window">
         <field name="name">Payment Transaction Crypto</field>
-        <field name="res_model">uni.invest.payment.transaction.crypto</field>
+        <field name="res_model">uni.payment.transaction.crypto</field>
         <field name="view_mode">list,form</field>
     </record>
 

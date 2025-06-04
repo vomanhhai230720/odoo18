@@ -7,11 +7,12 @@
             <field name="model">uni.invest.wallet</field>
             <field name="arch" type="xml">
                 <list string="Wallets">
-                    <field name="code"/>
+                    <field name="customer_id"/>
                     <field name="name"/>
+                    <field name="type"/>
                     <field name="currency"/>
-                    <field name="state"/>
-                    <field name="account_balance_id"/>
+                    <field name="balance"/>
+                    <field name="status"/>
                 </list>
             </field>
         </record>
@@ -25,13 +26,14 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="code"/>
+                                <field name="customer_id"/>
                                 <field name="name"/>
+                                <field name="type"/>
                             </group>
                             <group>
                                 <field name="currency"/>
-                                <field name="state"/>
-                                <field name="account_balance_id"/>
+                                <field name="balance"/>
+                                <field name="status"/>
                             </group>
                         </group>
                     </sheet>
@@ -51,7 +53,6 @@
             </field>
         </record>
 
-        <!-- Menu -->
-        
+     
     </data>
 </odoo>
