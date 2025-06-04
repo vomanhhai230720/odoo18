@@ -1,14 +1,20 @@
 from odoo import models, fields, api
 
 class Wallet(models.Model):
-    _name = 'uni.wallet'
+    _name = 'uni.invest.wallet'
     _description = 'Wallet'
 
-    code = fields.Char(string='Code')
+    customer_id = fields.Many2one('uni.invest.customer', string='Customer')    
     name = fields.Char(string='Name')
+    type = fields.Selection([
+        ('INVEST', 'Invest'),
+        ('PROFIT', 'Profit'),
+        ('MANAGEMENT', 'Management'),
+    ], string='Type')
     currency = fields.Char(string='Currency')
-    state = fields.Selection([
-        ('active', 'Active'),
-        ('inactive', 'Inactive')
-    ], string='State', default='active')
-    account_balance_id = fields.Many2one('uni.account_balance', string='Account Balance')
+    balance = fields.Float(string='Balance')
+    status = fields.Boolean(string='Status')    
+    
+    
+     
+    

@@ -1,10 +1,10 @@
 from odoo import models, fields
 
 class Notification(models.Model):
-    _name = 'uni.notification'
+    _name = 'uni.invest.notification'
     _description = 'Notification Model'
 
-    customer_id = fields.Many2one('uni.customer', string='Customer', required=True, ondelete='cascade')
+    customer_id = fields.Many2one('uni.invest.customer', string='Customer', required=True, ondelete='cascade')
     
     type = fields.Selection([
         ('info', 'Info'),

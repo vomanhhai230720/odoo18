@@ -3,8 +3,8 @@
     <data>
         <!-- List View -->
         <record id="view_notification_tree" model="ir.ui.view">
-            <field name="name">uni.notification.tree</field>
-            <field name="model">uni.notification</field>
+            <field name="name">uni.invest.notification.tree</field>
+            <field name="model">uni.invest.notification</field>
             <field name="arch" type="xml">
                 <list>
                     <field name="customer_id"/>
@@ -20,8 +20,8 @@
 
         <!-- Form View -->
         <record id="view_notification_form" model="ir.ui.view">
-            <field name="name">uni.notification.form</field>
-            <field name="model">uni.notification</field>
+            <field name="name">uni.invest.notification.form</field>
+            <field name="model">uni.invest.notification</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
@@ -49,8 +49,8 @@
 
         <!-- Search View -->
         <record id="view_notification_search" model="ir.ui.view">
-            <field name="name">uni.notification.search</field>
-            <field name="model">uni.notification</field>
+            <field name="name">uni.invest.notification.search</field>
+            <field name="model">uni.invest.notification</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="customer_id"/>
@@ -71,7 +71,7 @@
         <!-- Action -->
         <record id="action_notification" model="ir.actions.act_window">
             <field name="name">Notifications</field>
-            <field name="res_model">uni.notification</field>
+            <field name="res_model">uni.invest.notification</field>
             <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_notification_search"/>
         </record>

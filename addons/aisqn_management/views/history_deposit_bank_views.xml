@@ -2,7 +2,7 @@
 <odoo>
     <record id="view_history_deposit_bank_list" model="ir.ui.view">
         <field name="name">history.deposit.bank.list</field>
-        <field name="model">uni.history.deposit.bank</field>
+        <field name="model">uni.invest.history.deposit.bank</field>
         <field name="arch" type="xml">
             <list>
                 <field name="user_id"/>
@@ -23,7 +23,7 @@
     <!-- Form View -->
     <record id="view_history_deposit_bank_form" model="ir.ui.view">
         <field name="name">history.deposit.bank.form</field>
-        <field name="model">uni.history.deposit.bank</field>
+        <field name="model">uni.invest.history.deposit.bank</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -51,7 +51,7 @@
     <!-- Action -->
     <record id="action_history_deposit_bank" model="ir.actions.act_window">
         <field name="name">Deposit History</field>
-        <field name="res_model">uni.history.deposit.bank</field>
+        <field name="res_model">uni.invest.history.deposit.bank</field>
         <field name="view_mode">list,form</field>
     </record>
 

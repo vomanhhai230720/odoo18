@@ -1,8 +1,8 @@
 <odoo>
     <!-- List View -->
     <record id="view_uni_trading_strategy_list" model="ir.ui.view">
-        <field name="name">uni.trading.strategy.list</field>
-        <field name="model">uni.trading.strategy</field>
+        <field name="name">uni.invest.trading.strategy.list</field>
+        <field name="model">uni.invest.trading.strategy</field>
         <field name="arch" type="xml">
             <list>
                 <field name="profit"/>
@@ -14,8 +14,8 @@
 
     <!-- Form View -->
     <record id="view_uni_trading_strategy_form" model="ir.ui.view">
-        <field name="name">uni.trading.strategy.form</field>
-        <field name="model">uni.trading.strategy</field>
+        <field name="name">uni.invest.trading.strategy.form</field>
+        <field name="model">uni.invest.trading.strategy</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -32,7 +32,7 @@
     <!-- Action -->
     <record id="action_uni_trading_strategy" model="ir.actions.act_window">
         <field name="name">Trading Strategies</field>
-        <field name="res_model">uni.trading.strategy</field>
+        <field name="res_model">uni.invest.trading.strategy</field>
         <field name="view_mode">list,form</field>
     </record>
 </odoo>

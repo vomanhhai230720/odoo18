@@ -3,8 +3,8 @@
   <data>
     <!-- Tree View -->
     <record id="view_account_balance_tree" model="ir.ui.view">
-      <field name="name">uni.account.balance.tree</field>
-      <field name="model">uni.account_balance</field>
+      <field name="name">uni.invest.account.balance.tree</field>
+      <field name="model">uni.invest.account_balance</field>
       <field name="arch" type="xml">
         <list>
           <field name="user_id"/>
@@ -25,8 +25,8 @@
 
     <!-- Form View -->
     <record id="view_account_balance_form" model="ir.ui.view">
-      <field name="name">uni.account.balance.form</field>
-      <field name="model">uni.account_balance</field>
+      <field name="name">uni.invest.account.balance.form</field>
+      <field name="model">uni.invest.account_balance</field>
       <field name="arch" type="xml">
         <form>
           <sheet>
@@ -56,7 +56,7 @@
     <!-- Action -->
     <record id="action_account_balance" model="ir.actions.act_window">
       <field name="name">Account Balance</field>
-      <field name="res_model">uni.account_balance</field>
+      <field name="res_model">uni.invest.account_balance</field>
       <field name="view_mode">list,form</field>
     </record>
 
