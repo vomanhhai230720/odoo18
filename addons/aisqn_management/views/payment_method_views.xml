@@ -3,7 +3,7 @@
     <!-- List View for Payment Method -->
     <record id="view_payment_method_list" model="ir.ui.view">
         <field name="name">payment.method.list</field>
-        <field name="model">uni.payment.method</field>
+        <field name="model">uni.invest.payment.method</field>
         <field name="arch" type="xml">
             <list>
                 <field name="affiliate_id"/>
@@ -17,7 +17,7 @@
     <!-- Form View for Payment Method -->
     <record id="view_payment_method_form" model="ir.ui.view">
         <field name="name">payment.method.form</field>
-        <field name="model">uni.payment.method</field>
+        <field name="model">uni.invest.payment.method</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -35,7 +35,7 @@
     <!-- Action for Payment Method -->
     <record id="action_payment_method" model="ir.actions.act_window">
         <field name="name">Payment Method</field>
-        <field name="res_model">uni.payment.method</field>
+        <field name="res_model">uni.invest.payment.method</field>
         <field name="view_mode">list,form</field>
     </record>
 

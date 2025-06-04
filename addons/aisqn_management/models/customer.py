@@ -2,7 +2,7 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
 class Customer(models.Model):
-    _name = 'uni.customer'
+    _name = 'uni.invest.customer'
     _description = 'Customer'
 
     name = fields.Char(string='Name', required=True)
@@ -38,7 +38,7 @@ class Customer(models.Model):
     identity = fields.Binary(string='Identity', attachment=True)
     residence = fields.Binary(string='Residence', attachment=True)
     back_residence = fields.Binary(string='Back Residence', attachment=True)
-    user_id = fields.Many2one('uni.user', string='User ID', required=True, ondelete='cascade')
+    user_id = fields.Many2one('uni.invest.user', string='User ID', required=True, ondelete='cascade')
 
     # Constraints (optional, to ensure uniqueness of username and email)
     _sql_constraints = [

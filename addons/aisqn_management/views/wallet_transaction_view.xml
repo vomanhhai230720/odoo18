@@ -3,8 +3,8 @@
     <data>
         <!-- List View -->
         <record id="view_wallet_transaction_list" model="ir.ui.view">
-            <field name="name">uni.wallet_transaction.list</field>
-            <field name="model">uni.wallet_transaction</field>
+            <field name="name">uni.invest.wallet_transaction.list</field>
+            <field name="model">uni.invest.wallet_transaction</field>
             <field name="arch" type="xml">
                 <list string="Wallet Transactions">
                     <field name="wallet_id"/>
@@ -19,8 +19,8 @@
 
         <!-- Form View -->
         <record id="view_wallet_transaction_form" model="ir.ui.view">
-            <field name="name">uni.wallet_transaction.form</field>
-            <field name="model">uni.wallet_transaction</field>
+            <field name="name">uni.invest.wallet_transaction.form</field>
+            <field name="model">uni.invest.wallet_transaction</field>
             <field name="arch" type="xml">
                 <form string="Wallet Transaction">
                     <sheet>
@@ -44,7 +44,7 @@
         <!-- Action -->
         <record id="action_wallet_transaction" model="ir.actions.act_window">
             <field name="name">Wallet Transactions</field>
-            <field name="res_model">uni.wallet_transaction</field>
+            <field name="res_model">uni.invest.wallet_transaction</field>
             <field name="view_mode">list,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">

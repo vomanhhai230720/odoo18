@@ -1,16 +1,20 @@
 from odoo import models, fields, api
 
 class WalletTransaction(models.Model):
-    _name = 'uni.wallet_transaction'
+    _name = 'uni.invest.wallet_transaction'
     _description = 'Wallet Transaction'
 
-    wallet_id = fields.Many2one('uni.wallet', string='Wallet', required=True)
-    partner_id = fields.Many2one('res.partner', string='Partner')
-    note = fields.Text(string='Note')
-    amount = fields.Float(string='Amount', default=0.0)
-    status = fields.Selection([
-        ('pending', 'Pending'),
-        ('completed', 'Completed'),
-        ('failed', 'Failed')
-    ], string='Status', default='pending')
-    created_date = fields.Datetime(string='Created Date', default=fields.Datetime.now)
+    wallet_id = fields.Many2one('uni.invest.wallet', string='Wallet', required=True)
+    fee_managemen_ID = fields.Many2one('uni.invest.fee_management', string='Fee Management')
+    name = fields.Char(string='Name')
+    type = fields.Selection([
+        ('deposit', 'Deposit'),
+        ('withdrawal', 'Withdrawal'),
+        ('profit', 'Profit'),
+        ('management', 'Management fee'),
+        ('other', 'Other'),
+    ], string='Type')
+    currency = fields.Char(string='Currency')
+    description = fields.Text(string='Description')
+    amount = fields.Float(string='Amount', default=0.0) 
+    
